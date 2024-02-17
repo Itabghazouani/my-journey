@@ -1,7 +1,9 @@
 function getNavBarHtml(){
   document.getElementById('navbar-el').innerHTML = `
   <div class="logo-container">
-    <img class="logo" src="assets/favicon.ico" alt="logo">
+    <div class="logo-container-icon-box">
+      <img src="assets/favicon.ico" alt="Icon of the Learning Journal" class="icon">
+    </div>
     <p class="project-name">My Coding Journey</p>
   </div>
   <nav>

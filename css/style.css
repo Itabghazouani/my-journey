@@ -7,8 +7,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
-    color: #151515;
-    background-color: #FAFAFA;
+    color: #FFFFFF;
+    background: linear-gradient(#111, #0F0D0E);
 }
 
 .container {
@@ -39,11 +39,20 @@ header .container {
     margin: 0;
 }
 
+.logo-container-icon-box {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.icon {
+  width: 32px;
+  height: 40px;
+}
+
 .project-name {
     font-size: 0.846rem;
     margin-left: 0.5em;
     margin-top: 1.5em;
-    color: #0E0E0E;
     font-weight: 700;
 }
 
@@ -53,12 +62,16 @@ nav ul {
 }
 
 nav a {
-    color: #090909;
     text-decoration: none;
     font-size: 0.75rem;
     display: block;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+nav a:visited {
+  text-decoration: none;
+  color: inherit;
 }
 
 li {
@@ -101,7 +114,6 @@ li {
 h2 {
     font-size: 1rem;
     margin-bottom: 2em;
-    color: #151515;
     font-weight: 800;
 }
 
@@ -128,6 +140,11 @@ footer {
     padding: 0.5em 0;
 }
 
+.section-title h2 {
+  text-align: center;
+  font-size: 1.3em;
+}
+
 article {
     margin-bottom: 3em;
 }
@@ -148,7 +165,6 @@ img {
     font-size: 1.5rem;
     margin: 0.5em 0 0.35em 0;
     font-weight: 700;
-    color: #141414;
 }
 
 .article-preview {
@@ -176,7 +192,6 @@ p {
 .recent-header {
     text-align: center;
     font-size: 1rem;
-    color: #000000;
     font-weight: 700;
     margin-bottom: 0;
     margin-top: 0;
@@ -225,6 +240,19 @@ main section {
     margin-bottom: 2.5em;
 }
 
+.view-more button {
+  font-size: 1.25rem;
+  background: #0F0D0E;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 700;
+  padding: .35em 1em;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
 .recent-header-about {
     text-align: center;
     margin-left: auto;
@@ -262,7 +290,7 @@ main section {
     margin-bottom: 3.5em;
 }
 
-.how-i-stay-commited {
+.le-wagon-bootcamp {
     margin-bottom: 0;
 }
 
@@ -270,15 +298,15 @@ main section {
     margin-top: 2em;
 }
 
-.view-more button {
-    border: none;
-    background-color: white;
-    text-decoration: underline;
-    font-size: 1rem;
-    color: #000000;
-    font-weight: 700;
-    text-transform: capitalize;
-    cursor: pointer;
+.about-article-link,
+.about-article-link:visited {
+  color: #F5ECA7;
+  text-decoration: none;
+}
+
+.about-article-link:hover,
+.about-article-link:focus {
+  color: #FBD449;
 }
 
 footer {
@@ -310,56 +338,61 @@ footer {
 }
 
 @media (min-width: 480px) {
-    .section2, .section2-home, .section2-about{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 1em;
-    }
 
-    .section2 article, .section2-home article, .section2-about article {
-        flex: 1 220px;
-    }
+  .icon {
+    width: 32px;
+    height: 32px;
+  }
+  .section2, .section2-home, .section2-about{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1em;
+  }
 
-    .home-article-container {
-        padding: 6em 1em 2em 2.7em;
-    }
+  .section2 article, .section2-home article, .section2-about article {
+      flex: 1 220px;
+  }
 
-    header .container {
-        padding-left: 3em;
-        padding-right: 3em;
-    }
+  .home-article-container {
+      padding: 6em 1em 2em 2.7em;
+  }
 
-    li {
-        margin-right: 0.5em;
-    }
+  header .container {
+      padding-left: 3em;
+      padding-right: 3em;
+  }
 
-    footer {
-        padding-bottom: 1em;
-        margin-right: auto;
-        padding-right: 0;
-    }
+  li {
+      margin-right: 0.5em;
+  }
 
-    .footer-title,
-    .copyright {
-        margin-left: -2.5em;
-    }
+  footer {
+      padding-bottom: 1em;
+      margin-right: auto;
+      padding-right: 0;
+  }
 
-    .recent-header-about {
-        text-align: center;
-        margin-bottom: 1.5em;
-        margin-left: auto;
-        margin-right: auto;
-        font-weight: 700;
-    }
+  .footer-title,
+  .copyright {
+      margin-left: -2.5em;
+  }
 
-    .description {
-        font-size: 1rem;
-    }
+  .recent-header-about {
+      text-align: center;
+      margin-bottom: 1.5em;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: 700;
+  }
 
-    .hide {
-        display: block;
-    }
+  .description {
+      font-size: 1rem;
+  }
+
+  .hide {
+      display: block;
+  }
 
 }
 
@@ -376,6 +409,11 @@ footer {
     .container {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .icon {
+      width: 38px;
+      height: 38px;
     }
 
     nav a {
@@ -428,7 +466,6 @@ footer {
         margin-bottom: -0.5em;
         font-size: 1.5rem;
         font-weight: 700;
-        color: #141414;
     }
 
     .my-img {

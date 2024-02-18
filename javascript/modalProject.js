@@ -22,16 +22,18 @@ function modalProject(projectsArr, projectId) {
 
   <article class="project-card">
     <div class="close-modal-btn-container">
-      <button class="modal-close-btn" id="modal-close-btn">X</button>
+      <button class="modal-close-btn" id="modal-close-btn">x</button>
     </div>
     <img src="${targetProjectObj.image}" alt="project ${targetProjectObj.image}" class="project-img">
-    <span class="project-date">${targetProjectObj.date}</span>
-    <h2 class="project-title">${targetProjectObj.title}</h2>
-    <p class="project-languages">Languages used in the project: ${targetProjectObj.languages}</p>
-    <p class="project-description">${targetProjectObj.description}</p>
-    <div class="project-links">
-      <a href="${targetProjectObj.link}" class="project-link" target="_blank">Visit Website</a>
-      <a href="${targetProjectObj.githubRepository}" class="project-link" target="_blank">Github Repository</a>
+    <div class="project-card-container">
+      <h2 class="project-title">${targetProjectObj.title}</h2>
+      <span class="project-date">${targetProjectObj.date}</span>
+      <p class="project-languages">Languages used in the project: ${targetProjectObj.languages.join(', ')}</p>
+      <p class="project-description">${targetProjectObj.description}</p>
+      <div class="project-links">
+        <a href="${targetProjectObj.link}" class="project-link" target="_blank">Visit Website</a>
+        <a href="${targetProjectObj.githubRepository}" class="project-link" target="_blank">Github Repository</a>
+      </div>
     </div>
   </article>
   <footer>

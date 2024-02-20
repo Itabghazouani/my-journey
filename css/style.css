@@ -145,6 +145,8 @@ footer {
   margin: 1em 0.5em 1em 0.5em;
   font-size: 1.4em;
   text-align: center;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 article {
@@ -497,7 +499,7 @@ footer {
     border-top: 5px solid #0F0D0E;
     margin: 1em auto auto auto;
     font-size: 1.4em;
-    padding-top: 1em;
+    padding: 1em 3em auto;
   }
 
 

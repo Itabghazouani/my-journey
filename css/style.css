@@ -528,8 +528,8 @@ footer {
 }
 
 @media (min-width: 540px) {
-  .section2 article:last-child,
-  .section2-about article:last-child,
+  .section2 article:last-child(-n + 2),
+  .section2-about article:last-child(-n + 2),
   .section2-home article:last-child(-n + 2) {
     border-bottom: none;
   }
@@ -637,8 +637,8 @@ footer {
     }
 }
 @media (min-width: 920px) {
-  .section2 article:last-child,
-  .section2-about article:last-child,
+  .section2 article:last-child(-n + 3),
+  .section2-about article:last-child(-n + 3),
   .section2-home article:last-child(-n + 3) {
     border-bottom: none;
   }

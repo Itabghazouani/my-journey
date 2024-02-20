@@ -239,7 +239,9 @@ p {
     width: 100%;
 }
 
-.section2 article {
+.section2 article:last-child,
+.section2-about article:last-child,
+.section2-home:last-child {
   padding-bottom: 1em;
   border-bottom: 1px solid white;
 }

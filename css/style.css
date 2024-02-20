@@ -239,16 +239,16 @@ p {
     width: 100%;
 }
 
-.section2 article:last-child,
-.section2-about article:last-child,
-.section2-home:last-child {
+.section2 article,
+.section2-about article,
+.section2-home article{
   padding-bottom: 1em;
   border-bottom: 1px solid white;
 }
 
 .section2 article:last-child,
 .section2-about article:last-child,
-.section2-home:last-child {
+.section2-home article:last-child {
   border-bottom: none;
 }
 
@@ -530,7 +530,7 @@ footer {
 @media (min-width: 540px) {
   .section2 article:last-child,
   .section2-about article:last-child,
-  .section2-home:last-child(-n + 2) {
+  .section2-home article:last-child(-n + 2) {
     border-bottom: none;
   }
 }
@@ -639,7 +639,7 @@ footer {
 @media (min-width: 920px) {
   .section2 article:last-child,
   .section2-about article:last-child,
-  .section2-home:last-child(-n + 3) {
+  .section2-home article:last-child(-n + 3) {
     border-bottom: none;
   }
 }

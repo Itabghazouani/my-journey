@@ -8,8 +8,8 @@ function getNavBarHtml(){
   </div>
   <nav>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about-me.html">About me</a></li>
+      <li><a href="index.html" class="navbar-link">Home</a></li>
+      <li><a href="about-me.html" class="navbar-link">About me</a></li>
     </ul>
   </nav>`
 }

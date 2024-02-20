@@ -62,11 +62,12 @@ nav ul {
 }
 
 nav a {
-    text-decoration: none;
-    font-size: 0.75rem;
-    display: block;
-    font-weight: 700;
-    text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 0.75rem;
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 nav a:visited {
